@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>eBookShop</display-name>
+  <servlet>
+    <description></description>
+    <display-name>ShopServletController</display-name>
+    <servlet-name>ShopServletController</servlet-name>
+    <servlet-class>ebookshop.ShopServletController</servlet-class>
+    <init-param>
+      <param-name>base</param-name>
+      <param-value>/eBookShop/shop</param-value>
+    </init-param>
+    <init-param>
+      <param-name>imageURL</param-name>
+      <param-value>/eBookShop/images/</param-value>
+    </init-param>
+    <init-param>
+      <param-name>jdbcDriver</param-name>
+      <param-value>com.mysql.jdbc.Driver</param-value>
+    </init-param>
+    <init-param>
+      <param-name>dbURL</param-name>
+      <param-value>jdbc:mysql://localhost:3306/ebookshop</param-value>
+    </init-param>
+    <init-param>
+      <param-name>dbUserName</param-name>
+      <param-value>root</param-value>
+    </init-param>
+    <init-param>
+      <param-name>dbPassword</param-name>
+      <param-value></param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShopServletController</servlet-name>
+    <url-pattern>/shop/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>ShopAdminServletController</display-name>
+    <servlet-name>ShopAdminServletController</servlet-name>
+    <servlet-class>ebookshop.ShopAdminServletController</servlet-class>
+    <init-param>
+      <param-name>base</param-name>
+      <param-value>/eBookShop/admin</param-value>
+    </init-param>
+    <init-param>
+      <param-name>imageURL</param-name>
+      <param-value>/eBookShop/images/</param-value>
+    </init-param>
+    <init-param>
+      <param-name>jdbcDriver</param-name>
+      <param-value>com.mysql.jdbc.Driver</param-value>
+    </init-param>
+    <init-param>
+      <param-name>dbURL</param-name>
+      <param-value>jdbc:mysql://localhost:3306/ebookshop</param-value>
+    </init-param>
+    <init-param>
+      <param-name>dbUserName</param-name>
+      <param-value>root</param-value>
+    </init-param>
+    <init-param>
+      <param-name>dbPassword</param-name>
+      <param-value></param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShopAdminServletController</servlet-name>
+    <url-pattern>/admin/*</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

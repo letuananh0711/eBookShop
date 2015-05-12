@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:yago="http://dbpedia.org/class/yago/"
+    xmlns:vocab="http://localhost:2020/resource/vocab/"
+    xmlns:rev="http://purl.org/stuff/rev#"
+    xmlns:d2r="http://sites.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/config.rdf#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:gr="http://purl.org/goodrelations/v1#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:dbpedia="http://dbpedia.org/resource/"
+    xmlns:meta="http://www4.wiwiss.fu-berlin.de/bizer/d2r-server/metadata#"
+    xmlns:db="http://localhost:2020/resource/"
+    xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:map="http://localhost:2020/resource/#">
+  <dbpedia-owl:Book rdf:about="http://localhost:2020/resource/livre/Gone_with_the_Wind">
+    <gr:name xml:lang="en">Gone with the Wind</gr:name>
+    <rdfs:label xml:lang="en">Gone with the Wind</rdfs:label>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Gone_with_the_Wind"/>
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Gone_with_the_Wind"/>
+    <dbpedia-owl:literaryGenre>
+      <yago:LiteraryGenres rdf:about="http://localhost:2020/resource/genreLivre/Novel">
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Novel"/>
+        <gr:category xml:lang="en">Novel</gr:category>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Novel"/>
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/GenreLivre"/>
+      </yago:LiteraryGenres>
+    </dbpedia-owl:literaryGenre>
+    <gr:description xml:lang="en">Gone with the Wind, first published in 1936, is a romance novel written by Margaret Mitchell, who received the Pulitzer Prize for Fiction for the book in 1937. The story is set in Clayton County, Georgia and Atlanta during the American Civil War and Reconstruction, and depicts the experiences of Scarlett O'Hara, the spoiled daughter of a well-to-do plantation owner, who must use every means at her disposal to come out of the poverty she finds herself in after Sherman's March to the Sea. The book is the source of the 1939 film of the same name. Margaret Mitchell began writing Gone with the Wind in 1926 to pass the time while recovering from an auto-crash injury that refused to heal. In April 1935, Harold Latham of Macmillan, an editor who was looking for new fiction, read what she had written and saw that it could be a best-seller. After Latham agreed to publish the book, Mitchell worked for another six months checking the historical references, and rewrote the opening chapter several times. Mitchell and her husband John Marsh, a copy editor by trade, edited the final version of the novel. Mitchell wrote the book's final moments first, and then wrote the events that lead up to it. As to what became of her star-crossed lovers, Rhett and Scarlett, after the novel ended, Mitchell did not know, and said, "For all I know, Rhett may have found someone else who was less difficult. " Gone with the Wind is the only novel by Mitchell published during her lifetime.</gr:description>
+    <gr:hasEAN_UCC_13>9780446365383</gr:hasEAN_UCC_13>
+    <gr:hasManufacturer>
+      <vocab:AuteurLivre rdf:about="http://localhost:2020/resource/auteurLivre/Margaret_Mitchell">
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Margaret_Mitchell"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Margaret_Mitchell"/>
+        <foaf:name xml:lang="en">Margaret Mitchell</foaf:name>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+      </vocab:AuteurLivre>
+    </gr:hasManufacturer>
+    <rdf:type rdf:resource="http://localhost:2020/resource/vocab/Livre"/>
+    <foaf:depiction rdf:resource="http://farm9.staticflickr.com/8420/8909327995_a4cc54eef3_n.jpg"/>
+    <gr:hasBrand>
+      <gr:Brand rdf:about="http://localhost:2020/resource/editeurLivre/Macmillan_Publishers">
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Macmillan_Publishers"/>
+        <gr:name xml:lang="en">Macmillan Publishers</gr:name>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Macmillan_Publishers"/>
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/EditeurLivre"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+      </gr:Brand>
+    </gr:hasBrand>
+  </dbpedia-owl:Book>
+</rdf:RDF>

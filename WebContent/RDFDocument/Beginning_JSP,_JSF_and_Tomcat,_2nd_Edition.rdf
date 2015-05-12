@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:yago="http://dbpedia.org/class/yago/"
+    xmlns:vocab="http://localhost:2020/resource/vocab/"
+    xmlns:rev="http://purl.org/stuff/rev#"
+    xmlns:d2r="http://sites.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/config.rdf#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:gr="http://purl.org/goodrelations/v1#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:dbpedia="http://dbpedia.org/resource/"
+    xmlns:meta="http://www4.wiwiss.fu-berlin.de/bizer/d2r-server/metadata#"
+    xmlns:db="http://localhost:2020/resource/"
+    xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:map="http://localhost:2020/resource/#">
+  <vocab:Livre rdf:about="http://localhost:2020/resource/livre/Mobile_Design_Pattern_Gallery">
+    <dbpedia-owl:literaryGenre>
+      <yago:LiteraryGenres rdf:about="http://localhost:2020/resource/genreLivre/ITs_Book">
+        <gr:category xml:lang="en">ITs Book</gr:category>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/ITs_Book"/>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/ITs_Book"/>
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/GenreLivre"/>
+      </yago:LiteraryGenres>
+    </dbpedia-owl:literaryGenre>
+    <gr:hasBrand>
+      <gr:Brand rdf:about="http://localhost:2020/resource/editeurLivre/O%27Reilly_Media">
+        <gr:name xml:lang="en">O'Reilly Media</gr:name>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/O%27Reilly_Media"/>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/O%27Reilly_Media"/>
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/EditeurLivre"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+      </gr:Brand>
+    </gr:hasBrand>
+    <rdfs:label xml:lang="en">Mobile Design Pattern Gallery</rdfs:label>
+    <gr:hasManufacturer>
+      <vocab:AuteurLivre rdf:about="http://localhost:2020/resource/auteurLivre/Theresa_Neil">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Theresa_Neil"/>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Theresa_Neil"/>
+        <foaf:name xml:lang="en">Theresa Neil</foaf:name>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+      </vocab:AuteurLivre>
+    </gr:hasManufacturer>
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Mobile_Design_Pattern_Gallery"/>
+    <gr:name xml:lang="en">Mobile Design Pattern Gallery</gr:name>
+    <gr:hasEAN_UCC_13>9781449314323</gr:hasEAN_UCC_13>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Mobile_Design_Pattern_Gallery"/>
+    <gr:description xml:lang="en">When you're under pressure to produce a well designed, easy-to-navigate mobile app, there's no time to reinvent the wheel. This concise book provides a handy reference to 70 mobile app design patterns, illustrated by more than 400 screenshots from current iOS, Android, BlackBerry, WebOS, Windows Mobile, and Symbian apps.</gr:description>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Book"/>
+    <foaf:depiction rdf:resource="http://farm9.staticflickr.com/8122/8937931153_7c9cb06a70_o.jpg"/>
+  </vocab:Livre>
+</rdf:RDF>
